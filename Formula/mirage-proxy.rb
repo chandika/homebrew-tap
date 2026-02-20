@@ -6,21 +6,21 @@ class MirageProxy < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-  url "https://github.com/chandika/mirage-proxy/archive/refs/tags/v0.5.15.tar.gz"
-  sha256 "419918ec494bcdbac26964e6bbced4ef2d50e9bb9bdbe25570c6c1976fd34843"
+      url "https://github.com/chandika/mirage-proxy/releases/download/v#{version}/mirage-proxy-v#{version}-macos-arm64"
+      sha256 "d54af281c92d3684d55700421eb19df5da8034d98fe645c66eead096771be53c"
     else
       url "https://github.com/chandika/mirage-proxy/releases/download/v#{version}/mirage-proxy-v#{version}-macos-x86_64"
-      sha256 "44f8a6f0fab1453097c742f7a9d7ff8710eab9b1fd33c9295ba33ff0dc9e00df"
+      sha256 "e21812e3eef34cc14c17c9a4b3264cfd86f9c2bf6a75f62c13be77570d9c746a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/chandika/mirage-proxy/releases/download/v#{version}/mirage-proxy-v#{version}-linux-arm64"
-      sha256 "5ed661f5b3ea8bc04db7de14e1e57398fc4a24e78f2e10f8515938ed1fe4b48e"
+      sha256 "c12929f003407be1c668da7047bd6e82b9e491b0a93f5e01324266e3a2aacd0c"
     else
       url "https://github.com/chandika/mirage-proxy/releases/download/v#{version}/mirage-proxy-v#{version}-linux-x86_64"
-      sha256 "f3c7289c0440c08ddc410e9760896064ef68bc7237b1b62aa5eb9ebad2cf5341"
+      sha256 "f8477878836c282c6acdd1821702cfb7f6e37d6e8c663b3b7813d35d42092311"
     end
   end
 
