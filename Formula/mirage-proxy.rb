@@ -1,26 +1,26 @@
 class MirageProxy < Formula
   desc "Invisible sensitive data filter for LLM APIs"
   homepage "https://github.com/chandika/mirage-proxy"
-  version "0.5.17"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chandika/mirage-proxy/releases/download/v0.5.17/mirage-proxy-v0.5.17-macos-arm64"
-      sha256 "18b45bd9750b509ec67d60a165f203845061e558a854593b2af3b4d12a28bc33"
+      url "https://github.com/chandika/mirage-proxy/releases/download/v0.7.0/mirage-proxy-v0.7.0-macos-arm64"
+      sha256 "b1f81288984678293dfd17bdeb5e91b7c09c62858285b4801d720d65fbc3b1f6"
     else
-      url "https://github.com/chandika/mirage-proxy/releases/download/v0.5.17/mirage-proxy-v0.5.17-macos-x86_64"
-      sha256 "85650d55114c9d1e11169ece84a7ea18891788556a33df32e56f30f48e975c33"
+      url "https://github.com/chandika/mirage-proxy/releases/download/v0.7.0/mirage-proxy-v0.7.0-macos-x86_64"
+      sha256 "4e116fcfadf563315abfd38aec3f637d90b1719b2ce2d49a24caa50894a718cf"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/chandika/mirage-proxy/releases/download/v0.5.17/mirage-proxy-v0.5.17-linux-arm64"
-      sha256 "a8e659d019899b371b3a3acd3f5f837b0b64eaf967f57d68a2657a31590f419c"
+      url "https://github.com/chandika/mirage-proxy/releases/download/v0.7.0/mirage-proxy-v0.7.0-linux-arm64"
+      sha256 "d34659f6d2963ae137aa7a5b895c34471e362d9d249d6b27a3261931f99bd827"
     else
-      url "https://github.com/chandika/mirage-proxy/releases/download/v0.5.17/mirage-proxy-v0.5.17-linux-x86_64"
-      sha256 "09546ae2372f962976d11c4153bf4c8219026eda9668b54a229cd0b70cdf80c2"
+      url "https://github.com/chandika/mirage-proxy/releases/download/v0.7.0/mirage-proxy-v0.7.0-linux-x86_64"
+      sha256 "2d9d79dc65381f135d2e0c69de3ae8988542a8ec8e73ff512e90c31b0ce95c88"
     end
   end
 
