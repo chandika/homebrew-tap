@@ -1,7 +1,7 @@
 class MirageProxy < Formula
   desc "Invisible sensitive data filter for LLM APIs"
   homepage "https://github.com/chandika/mirage-proxy"
-  version "0.7.9"
+  version "0.7.10"
   license "MIT"
 
   on_macos do
